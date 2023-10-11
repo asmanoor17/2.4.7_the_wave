@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+        <script src="script.js"></script>
+		<style>
+		    .move{
+		        height: 50px;
+		        width: 15%;
+		        border:solid 1px black;
+		        background-color:gray;
+		        margin:5px;
+		        position:relative;
+		        color:white;
+		    }
+		    #container
+		    {
+		        display:flex;
+		    }
+            
+		</style>
+	</head>
+    
+
+	<body>
+        <div id = container>
+            <div class = move id = div1></div>
+            <div class = move id = div2></div>
+            <div class = move id = div3></div>
+            <div class = move id = div4></div>
+            <div class = move id = div5></div>
+            <div class = move id = div6></div>
+            <div class = move id = div7></div>
+            <div class = move id = div8></div>
+        </div>
+        <script> var HEIGHT = $(window).height(); </script>
+	</body>
+</html>
+
+<!-- -The wave is when a div reaches the bottom of the window, and then returns to its original position.
+ -the following div should not start moving until the first div.
+-create function with set interval to change seconds to milliseconds
+-set function and use .animate & call back function
+use the given variable height 
+
+--the goal is to move the boxes from top to bottom using an animation and it returns back to its orginal posiiton after animation is done.
+
+-->
